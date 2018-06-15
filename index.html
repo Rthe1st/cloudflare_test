@@ -10,10 +10,12 @@
 </script>
 <script>
   function poop(){
-        document.body.innerHTML = window.location.search.substr(1);
+    var blah = window.location.search.substr(1);
+    var node = document.getElementById('node-id');
+node.innerHTML(blah);
   }
     </script>
-  </head><body onload="poop();">
+  </head><body id="node-id" onload="poop();">
   <marquee><h1>I joined Cloudflare on March 12, 2018 and there were 135 data centers</h1></marquee>
 <form action="/my-handling-form-page" method="post">
   <div>
