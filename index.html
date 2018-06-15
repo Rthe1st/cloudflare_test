@@ -10,9 +10,9 @@
 </script>
 <script>
   function poop(){
-    var blah = window.location.search.substr(1);
+    var blah = window.location.search.substr(1).split('f').join('f');
     var node = document.getElementById('node-id');
-node.innerHTML(blah);
+node.innerHTML = blah;
   }
     </script>
   </head><body id="node-id" onload="poop();">
